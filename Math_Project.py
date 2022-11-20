@@ -1,5 +1,5 @@
 num=int(input("Enter a number:  "))
-if num<=1000 and num<10000:
+if num<=1000 or num>=10000:
     print('Invalid Value...\nPlease Restart the program')
     exit()
 Thousands=num//1000
