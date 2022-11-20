@@ -1,9 +1,4 @@
-print('Welcome to our supermarket...\nDo you want to buy some ingredients?(Y/N)')
-if input() == 'Y' or 'y':
-    print("Great! Let's Have a look at our Menu\n------------")
-else:
-    print("Ok, Bye!")
-    exit
+print("Welcome to our supermarket...\n------------")
 print("Here's the Menu:\n1. Tomato = 3 ILS\n2. Cucumber = 2 ILS\n3. Coca-Cola = 5 ILS\n4. Chicken = 20 ILS Per KG\n------------")
 bill = 0
 for i in range(5):
