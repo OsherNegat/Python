@@ -1,5 +1,3 @@
-from time import sleep
-
 print("Welcome to my MENU!"
       "\nPRESS 1 to triple a number\nPRESS 2 for Insert IP's to a list"
       "\nPRESS 3 to print DNS Dictionary\nPRESS 4 to Insert a string and check if it's Polindrom")
