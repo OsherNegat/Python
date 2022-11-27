@@ -1,6 +1,7 @@
 from random import randint
 from time import sleep
 
+
 NAME = input("Enter your name: ")
 print("WELCOME " + NAME + '!' + "\nEnter how much money you've got ")
 money = int(input("Your money in ILS:  "))
