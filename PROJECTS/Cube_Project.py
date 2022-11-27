@@ -1,4 +1,6 @@
-import random
+from random import randint
+from time import sleep
+
 NAME = input("Enter your name: ")
 print("WELCOME " + NAME + '!' + "\nEnter how much money you've got ")
 money = int(input("Your money in ILS:  "))
@@ -18,11 +20,13 @@ for num_of_round in range(rounds):
     print("-------------")
     print("ROUND", num_of_round + 1, ':')
     if money < 3:
-        print(f"Sorry {NAME} you can't play anymore!")
+        print(f"Sorry {NAME} you can't play anymore!\n")
         break
-    cube_1 = random.randint(1, 6)
-    cube_2 = random.randint(1, 6)
-    print("The generated numbers are: ", cube_1, cube_2)
+    print("Generating Numbers...")
+    sleep(2)
+    cube_1 = randint(1, 6)
+    cube_2 = randint(1, 6)
+    print("The Generated Numbers are: ", cube_1, cube_2)
     if cube_2 == cube_1:
         print("Congarts!\nYou won 100 ILS!")
         profit += 100
@@ -40,3 +44,4 @@ for num_of_round in range(rounds):
     money -= 3
     print("-------------")
 print("Your Total Earnings: ", str(profit) + ' ILS')
+print("Your Wallet Balance is: ", str(profit + money) + ' ILS')
